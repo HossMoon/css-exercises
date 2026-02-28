@@ -1,1 +1,14 @@
-/* Add CSS Styling */
+.black-click-me,
+.yellow-click-me {
+    font-size: 28px;
+    font-family: Arial, Helvetica, 'Times New Roman', sans-serif;
+}
+
+.black-click-me {
+    background-color: black;
+    color: white;
+}
+
+.yellow-click-me {
+    background-color: yellow;
+}
