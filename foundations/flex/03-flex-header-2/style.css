@@ -1,7 +1,11 @@
 /* this is some magical font-importing.  
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
-
+/*
+* {
+  outline: red solid 2px;
+}
+*/
 body {
   margin: 0;
   background: #eee;
@@ -12,6 +16,30 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+}
+
+.left-header,
+.right-header {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  /*flex: 1 0 auto;*/
+  align-items: center;
+  gap: 8px;
+}
+
+.left-header {
+  justify-content: flex-start;
+}
+
+.right-header {
+  justify-content: flex-end;
 }
 
 .profile-image {
@@ -27,6 +55,10 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+}
+
+.notifications {
+  margin-left: 16px;
 }
 
 button {
@@ -45,4 +77,8 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 8px;
 }

@@ -1,6 +1,32 @@
+* {
+  /* outline: red solid 2px; */
+  font-family: 'Courier New', Courier, monospace;
+  color: blue;
+  font-weight: 1000;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  flex: 1;
+  padding: 8px;
+}
+
+.left-links {
+  justify-content: flex-start;
+}
+
+.right-links {
+  justify-content: flex-end;
 }
 
 .logo {
@@ -9,17 +35,29 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 8px 0px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  flex: 1;
+}
+
+.left-ul {
+  justify-content: flex-start;
+}
+
+.right-ul {
+  justify-content: flex-end;
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
+  margin: 8px;
   /* this removes the line under the links */
   text-decoration: none;
 }
